@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Ticket Plugin",
+  "name": "Ticket Extension",
   "description": "",
   "version": "1.0",
   "action": {
