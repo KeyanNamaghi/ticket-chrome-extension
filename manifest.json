@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Ticket Plugin",
+  "description": "",
+  "version": "1.0",
+  "action": {
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "16": "logo.png"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "cookies",
+    "declarativeContent",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "main.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "minimum_chrome_version": "93"
+}
